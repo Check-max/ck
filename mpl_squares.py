@@ -1,6 +1,11 @@
 import matplotlib.pyplot as plt
 
-squares = [0, 1, 4, 9, 16, 25]
+input_values = [1, 2, 3, 4, 5]
+squares = [1, 4, 9, 16, 25]
 # 折线图
-plt.plot(squares)
+plt.plot(input_values, squares, linewidth=5)
+# 设置图标标题，并给坐标轴加上标签
+plt.title("Square Numbers", fontsize=25)
+plt.xlabel("Value", fontsize=14)
+plt.ylabel("Square of value", fontsize=14)
 plt.show()
