@@ -4,7 +4,8 @@ x_value = list(range(1, 1001))
 y_value = []
 for a in x_value:
     y_value.append(a * a)
-plt.scatter(x_value, y_value, s=2)
+# 绘制点,颜色映射
+plt.scatter(x_value, y_value, c=y_value, cmap=plt.cm.Blues, edgecolor='none', s=2)
 # 设置图标标题，并给坐标轴加上标签
 plt.title("Square Numbers", fontsize=25)
 plt.xlabel("Value", fontsize=14)
